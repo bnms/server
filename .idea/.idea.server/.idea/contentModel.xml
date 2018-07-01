@@ -14,6 +14,8 @@
       <e p="LICENSE" t="Include" />
       <e p="Models" t="Include">
         <e p="BnmsContext.cs" t="Include" />
+        <e p="Role.cs" t="Include" />
+        <e p="User.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">

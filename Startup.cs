@@ -33,7 +33,6 @@ namespace server
                 .AddDbContext<BnmsContext>(options => {
                     options.UseNpgsql(Configuration.GetConnectionString("BnmsConnection"));
                 });
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +49,9 @@ namespace server
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            BnmsContext.Initialize(app.ApplicationServices);
+            
         }
     }
 }
